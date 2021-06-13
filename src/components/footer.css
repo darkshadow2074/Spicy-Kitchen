@@ -1,0 +1,51 @@
+:root{
+    --menu-link-color:#FF2F00;
+    --menu-background:#FFEAE5;
+    --menu-hover:#FFAC99;
+    --black-frosted:#171717;
+}
+
+.footer{
+    text-align: center;
+    background-color: var(--black-frosted);
+    color: var(--menu-link-color);
+}
+.queries{
+    padding-top: 0.8rem;
+}
+.copy{
+    color: white;
+    background-color: black;
+    padding:0.6rem
+}
+.copy .name{
+    color: var(--menu-link-color);
+    font-weight: 600;
+}
+.connect{
+ margin: 0.2rem;
+}
+.icons-section{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding:0.4rem 0.6rem;
+}
+.icon1,.icon2{
+   padding-left: 0.5rem;
+}
+.icon1 .email,.phone{
+   padding-left: 0.2rem;
+}
+
+
+@media all and (max-width:425px){
+    .copy{
+        font-size: 13px;
+    }
+    .icon1 .email,.phone{
+       font-size: 13px;
+     }
+
+}

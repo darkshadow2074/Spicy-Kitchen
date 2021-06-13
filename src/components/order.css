@@ -1,0 +1,144 @@
+:root{
+    --menu-link-color:#FF2F00;
+    --menu-background:#FFEAE5;
+    --menu-hover:#FFAC99;
+}
+.orderSent{
+    display: none;
+}
+.orderHeading{
+    color: var(--menu-link-color);
+    padding-bottom: 3px;
+    position: relative;
+    text-transform: uppercase;
+    width: 30%;
+    margin: auto;
+    cursor: pointer;
+}
+.orderHeading::after{
+    position: absolute;
+    bottom: 0;
+    height: 2px;
+    display: block;
+    content: "";
+    left: 50%;
+    background: var(--menu-link-color);
+    transition: width 0.3s ease 0s, left 0.3s ease 0s;
+    width: 0;
+}
+.orderHeading:hover::after{
+    width: 100%; 
+    left: 0; 
+}
+.orderSentSuccessfull{
+    display: block;
+}
+
+.order{
+    text-align: center;
+    padding: 1rem;
+   
+}
+.orderContainer{
+    padding: 1rem;
+    width: 80%;
+    margin: 1rem auto;
+    
+}
+
+.orderContainer input,textarea{
+    width: 60%;
+    margin:1rem;
+    padding: 1rem;
+}
+.orderContainer .placeOrder{
+    min-width: 120px;
+    cursor: pointer;
+}
+
+@media all and (min-width:280px){
+    .orderContainer input,textarea{
+        width: 100%;
+        margin:1rem;
+        padding: 0.8rem;
+        border-width: 1px;
+        border-color: var(--menu-link-color);
+        outline: none;
+        border-image: none;
+        color: var(--menu-link-color);
+    }
+    .orderContainer input::placeholder,textarea::placeholder{
+        color: var(--menu-link-color);
+    }
+    .orderContainer .placeOrder{
+        width:150px;
+        min-width: 100px;
+        border-radius:20px ;
+        outline: none;
+        border: none;
+        background:var(--menu-link-color);
+        color:black
+    } 
+    .orderHeading{
+        font-size: 21px;
+        width: 80%;
+    }
+}
+
+@media all and (min-width:420px){
+    .orderContainer input,textarea{
+        width: 90%;
+        margin:1rem;
+        padding: 1rem;
+        border-width: 1px;
+        border-color: var(--menu-link-color);
+        outline: none;
+        border-image: none;
+        color: var(--menu-link-color);
+    }
+    .orderContainer input::placeholder,textarea::placeholder{
+        color: var(--menu-link-color);
+    }
+    .orderContainer .placeOrder{
+        width:150px;
+        min-width: 100px;
+        border-radius:20px ;
+        outline: none;
+        border: none;
+        background:var(--menu-link-color);
+        color:black
+    } 
+    .orderHeading{
+        font-size: 26px;
+        width: 40%;
+    }
+}
+
+@media all and (min-width:620px){
+    .orderContainer input,textarea{
+        width: 50%;
+        margin:1rem;
+        padding: 1rem;
+        border-width: 1px;
+        border-color: var(--menu-link-color);
+        outline: none;
+        border-image: none;
+        color: var(--menu-link-color);
+    }
+    .orderContainer input::placeholder,textarea::placeholder{
+        color: var(--menu-link-color);
+    }
+    .orderContainer .placeOrder{
+        width:150px;
+        min-width: 100px;
+        border-radius:20px ;
+        outline: none;
+        border: none;
+        background:var(--menu-link-color);
+        color:black
+    } 
+    .orderHeading{
+        font-size: 26px;
+        width: 30%;
+    }
+}

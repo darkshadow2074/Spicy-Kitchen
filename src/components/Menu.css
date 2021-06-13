@@ -1,0 +1,80 @@
+:root{
+    --menu-link-color:#FF2F00;
+    --menu-background:#FFEAE5;
+    --menu-hover:#FFAC99;
+}
+
+.menu-component{
+     background: var(--menu-background);
+}
+.menu{
+   padding-top: 2rem;
+}
+.menu-heading{
+    color: var(--menu-link-color);
+    font-size: 35px;
+    text-align: center;
+}
+
+
+.menuSelection{
+    max-width: 600px;
+    border-radius: 17px;
+    margin: 1rem auto;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #D8D6D6;
+}
+.menuSelection button{
+    padding: 1rem;
+    min-width: 150px;
+    cursor: pointer;
+    background: transparent;
+    outline: none;
+    border: none;
+    border-radius:10px ;
+    font-size: 16px;
+}
+ .menuSelection button:not(.disable):hover{
+    background: var(--menu-hover);
+}
+.menuSelection .activeMenu{
+    background: var(--menu-link-color);
+}
+.btn-container{
+    margin:1rem auto;
+    text-align: center;
+    padding-bottom: 1.6rem;
+}
+
+.fullMenu{
+    min-width: 150px;
+    padding: 1.4rem;
+    border: 1px solid black;
+    outline: none;
+    border-color: var(--menu-link-color);
+    background: transparent;
+    cursor: pointer;
+}
+
+.fullMenu:hover{
+    background: var(--menu-link-color);
+    border:none;
+    transition:  all 0.5s ease-in-out;
+}
+
+@media all and (max-width: 625px) {
+    .menuSelection{
+        max-width: 150px;
+        border-radius: 17px;
+        margin: 1rem auto;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        background: #D8D6D6;
+    }
+}

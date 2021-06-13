@@ -1,0 +1,140 @@
+:root{
+    --menu-link-color:#FF2F00;
+}
+
+
+.about{
+    margin:2.6rem;
+    padding: 1rem;
+}
+
+.about-heading{
+    text-align: center;
+    color:var(--menu-link-color);
+}
+
+.about-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 0.7rem;
+    padding: 1.5rem;
+}
+
+.about-img{
+    flex:50%;
+    width: 280px;
+    height: 290px;
+    align-self: center;
+    text-align: center;
+   
+    
+}
+.about-img img{
+    max-width: 100%;
+    border-radius: 50%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    -webkit-shape-outside:circle();
+    shape-outside:circle();
+    background-color: black;
+}
+
+.about-info{
+    flex:50%;
+    padding: 1.2rem 1.2rem 1.2rem 0.7rem;
+    line-height: 1.8;
+    word-spacing: 0.8px;
+}
+
+.about-info-heading{
+    margin-top: 0.8rem;
+    text-align: left;
+    line-height: 1.6;
+    color:var(--menu-link-color);
+}
+
+
+
+.location{
+    text-align: left;
+    color: var(--menu-link-color);
+    font-size: 20px;
+}
+
+.about-info-paragraph{
+    text-align: justify;
+}
+
+@media all and (max-width:920px){
+    .about-img img{
+        max-width: 80%;
+    }    
+}
+
+@media all and (max-width:800px){
+    .about-container{
+        flex-direction: column;
+    }
+    .about-img img{
+        max-width: 90%;
+        border-radius: 4%;
+    }   
+}
+
+@media all and (max-width:425px){
+    .about{
+        margin: 1.1rem;
+        padding: 0.6rem;
+    }
+    .about-container{
+        padding: 1.2rem;
+    }
+    .about-img img{
+        max-width: 70%;
+        border-radius: 4%;
+    }  
+    .about-info-heading{
+        font-size: 28px;
+    }
+}
+
+@media all and (max-width:375px){
+    .about{
+        margin: 0.9rem;
+        padding: 0.4rem;
+    }
+    .about-container{
+        padding: 1rem;
+    }
+    .about-img img{
+        max-width: 60%;
+        border-radius: 4%;
+    }  
+    .about-info-heading{
+        font-size: 24px;
+    } 
+    .about-info-paragraph{
+        word-spacing: 1.2px;
+    }
+}
+
+@media all and (max-width:375px){
+    .about{
+        margin: 0.9rem;
+        padding: 0.4rem;
+    }
+    .about-container{
+        padding: 1rem;
+    }
+    .about-img img{
+        max-width: 60%;
+        border-radius: 4%;
+    }  
+    .about-info-heading{
+        font-size: 20px;
+    } 
+    .about-info-paragraph{
+        font-size: 14px;
+        word-spacing: 1.2px;
+    }
+}
