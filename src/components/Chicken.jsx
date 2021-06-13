@@ -2,14 +2,14 @@ import React from 'react'
 import {chickenMenu} from "./menuOverview"
 import "./Menu.css"
 import "./card.css"
-import img from "../assets/images/crousel1.jpg"
+// import img from "../assets/images/crousel1.jpg"
 function Chicken({showMenu}) {
   console.log(showMenu);
     return (
        <> 
           {
              showMenu===false?
-              chickenMenu.map(({id,title,description,discountedPrice,originalPrice},index)=>{
+              chickenMenu.map(({id,title,description,discountedPrice,originalPrice,img},index)=>{
                  return(
                     <div className={`menu${id}`}>
                        <div className="menuCardImg">
