@@ -8,18 +8,14 @@ function Order() {
     const [inputEmail,setInputEmail] = useState("");
     const [inputAddress,setInputAddress] = useState("");
     const [inputMessage,setInputMessage] = useState("");
-    const [name,setName] = useState("");
-    const [number,setNumber] = useState("");
-    const [email,setEmail] = useState("");
-    const [address,setAddress] = useState("");
-    const [message,setMessage] = useState("");
-    const orderPlaceHandler = ()=>{
-        setName(inputName);
-        setNumber(inputNumber);
-        setEmail(inputEmail);
-        setAddress(inputAddress);
-        setMessage(inputMessage)
-    }
+
+    // const orderPlaceHandler = ()=>{
+    //     setName(inputName);
+    //     setNumber(inputNumber);
+    //     setEmail(inputEmail);
+    //     setAddress(inputAddress);
+    //     setMessage(inputMessage)
+    // }
     
 
     const resetForm =() =>{
@@ -71,7 +67,7 @@ function Order() {
                     <p>Order Is Placed Successfully</p>
                 </div>
                 <div className="column4">
-                    <input type="submit" className="placeOrder" value={"Place Order "}onClick={orderPlaceHandler}></input>
+                    <input type="submit" className="placeOrder" value={"Place Order "}></input>
                 </div>
             </form>
         </div>
