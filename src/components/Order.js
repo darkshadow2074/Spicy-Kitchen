@@ -1,6 +1,5 @@
 import React, { useState } from 'react'
 import emailjs from 'emailjs-com';
-import axios from "axios"
 import "./order.css"
 function Order() {
     const [sent,setSent] = useState(false)
@@ -21,8 +20,7 @@ function Order() {
         setAddress(inputAddress);
         setMessage(inputMessage)
     }
-    console.log(`Name : ${name} \n Number : ${number} \n Email : ${email} \n Address : ${address} \n Message : ${message}`);
-
+    
 
     const resetForm =() =>{
           setInputName('');
@@ -49,9 +47,6 @@ function Order() {
           
          resetForm();
       }
-    if(sent){
-        console.log("I have  sent")
-    }
 
     return (
         <div className="order" id="Order">
