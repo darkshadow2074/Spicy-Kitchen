@@ -107,11 +107,17 @@
     .slide-title , .slide-text{
         font-size: 24px;
     }
+    .slide-image{
+        object-fit: fill;
+    }
 }
 
 @media all and (min-width:420px){
     .slide-title , .slide-text{
         font-size: 34px;
+    }
+    .slide-image{
+        object-fit: fill;
     }
 }
 

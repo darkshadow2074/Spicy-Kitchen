@@ -3,6 +3,8 @@ import {chickenMenu} from "./menuOverview"
 import "./Menu.css"
 import "./card.css"
 // import img from "../assets/images/crousel1.jpg"
+import menu1 from "../assets/images/menu1.jpeg"
+import menu11 from "../assets/images/menu11.jpeg"
 function Chicken({showMenu}) {
   console.log(showMenu);
     return (
@@ -28,7 +30,10 @@ function Chicken({showMenu}) {
                        </div>
                     </div>
                  )
-              }):<p>Hello I am menu</p>
+              }):<div style={{display:"flex",flexWrap:"wrap",width:"100%",flexDirection:"row",justifyContent:"space-evenly"}}>
+                 <img  src={menu11} alt="Chicken Menu" width="400px" />
+                 <img  src={menu1} alt="Chicken Menu" width="400px"/>
+              </div>
           }
        </>
     )

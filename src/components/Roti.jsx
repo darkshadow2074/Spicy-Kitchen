@@ -2,12 +2,13 @@ import React from 'react'
 import {rotiMenu} from "./menuOverview"
 import "./Menu.css"
 import "./card.css"
-import img from "../assets/images/crousel1.jpg"
-function Roti() {
+import menu3 from "../assets/images/menu3.jpeg"
+function Roti({showMenu}) {
     return (
         <> 
         {
-            rotiMenu.map(({id,title,description,discountedPrice,originalPrice},index)=>{
+            showMenu===false?
+            rotiMenu.map(({id,title,description,discountedPrice,originalPrice,img},index)=>{
                return(
                   <div className={`menu${id}`}>
                      <div className="menuCardImg">
@@ -26,7 +27,7 @@ function Roti() {
                      </div>
                   </div>
                )
-            })
+            }):<div style={{width:"100%",height:"auto",margin:"auto",textAlign:"center"}}><img src={menu3} alt="Roti Menu" width="400px"/></div>
         }
      </>
     )

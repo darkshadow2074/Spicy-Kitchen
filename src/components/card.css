@@ -28,7 +28,7 @@
     background: #F6F6F6;
     width: 140px;
     /* flex-basis: 20.333333%; */
-    flex: 0 1 calc(20% - 1em);
+    flex: 0 1 calc(23% - 1em);
     cursor: pointer;
     transition: transform 0.5s;
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);

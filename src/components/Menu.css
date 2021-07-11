@@ -1,11 +1,11 @@
 :root{
     --menu-link-color:#FF2F00;
-    --menu-background:#FFEAE5;
+    --menu-background:white;
     --menu-hover:#FFAC99;
 }
 
 .menu-component{
-     background: var(--menu-background);
+     background: white;
 }
 .menu{
    padding-top: 2rem;

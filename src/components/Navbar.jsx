@@ -13,6 +13,7 @@ console.log(window.innerWidth)
      const [colorChange,setColorChange] = useState(false);
      const [size,setSize] = useState(window.innerWidth);
      const [height,setInnerHeight] = useState(window.scrollY);
+     console.log(height)
      const responsiveHandler = () =>{
         setClicked(clicked===false?true:false);
      }
@@ -27,7 +28,8 @@ console.log(window.innerWidth)
      window.addEventListener("resize",resizeHandler);
     return (
         <div>
-           <nav className={colorChange?(height<=1205?"navbar active":"navbar menuActive"):"navbar"} >
+            {/* className={colorChange?(height<=1205?"navbar active":"navbar menuActive"):"navbar"} */}
+           <nav className="navbar menuActive" >
             <div className="brand-logo">
                 <img src={img}  className="logo" width="90px" height="90px" alt="brand-logo" />
             </div>
