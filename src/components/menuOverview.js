@@ -1,4 +1,4 @@
-import chcken_img1 from "../assets/images/crousel1.jpg"
+import chcken_img1 from "../assets/images/briyaniImage_2247x2559.jpeg"
 import chcken_img2 from "../assets/images/lemon_2247x2559.jpg"
 import chcken_img3 from "../assets/images/Chicken-Tikka-1-500x500_2247x2559.jpg"
 import chcken_img4 from "../assets/images/Mangalorean-Chicken-Sukka-4-500x375_2247x2559.jpg"
